@@ -4,50 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
   
-  <!-- Primary Meta Tags -->
+  <!-- Meta Tags -->
   <title>STANYTZ | Premium Digital Innovation Hub - Tanzania</title>
-  <meta name="title" content="STANYTZ | Premium Digital Innovation Hub">
-  <meta name="description" content="STANYTZ delivers world-class software, AI automation, WhatsApp bots & web solutions. Based in Tanzania, serving globally. Transform your business today!">
+  <meta name="description" content="STANYTZ - Leading technology company in Tanzania offering software development, AI solutions, WhatsApp automation, web & mobile apps. Professional tech services.">
+  <meta name="keywords" content="STANYTZ, software Tanzania, web development, AI automation, WhatsApp bot, mobile apps, tech company Dar es Salaam">
   <meta name="author" content="STANYTZ - Stanley Assanaly">
-  <meta name="keywords" content="STANYTZ, software development Tanzania, WhatsApp bot, AI automation, web development, mobile apps, Dar es Salaam, tech company">
   <meta name="theme-color" content="#8b5cf6">
-  <meta name="msapplication-TileColor" content="#8b5cf6">
   
-  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <!-- Open Graph / Social Media Preview -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://stanytz.com/">
   <meta property="og:title" content="STANYTZ | Premium Digital Innovation Hub">
-  <meta property="og:description" content="World-class software, AI automation & WhatsApp bots. Based in Tanzania, serving globally.">
+  <meta property="og:description" content="World-class software, AI automation & WhatsApp bots. Transform your business today!">
   <meta property="og:image" content="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:site_name" content="STANYTZ">
-  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://stanytz.com">
   
-  <!-- Twitter Card -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://stanytz.com/">
-  <meta property="twitter:title" content="STANYTZ | Premium Digital Innovation Hub">
-  <meta property="twitter:description" content="World-class software, AI automation & WhatsApp bots. Transform your business today!">
-  <meta property="twitter:image" content="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg">
-  
-  <!-- iOS & Android PWA -->
+  <!-- PWA -->
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="STANYTZ">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="STANYTZ">
-  
-  <!-- Favicon & App Icons -->
   <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg">
-  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg">
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet"/>
   
   <!-- Font Awesome -->
@@ -56,31 +35,17 @@
   <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
-  <!-- Plausible Analytics (Privacy-Focused) -->
-  <script defer data-domain="stanytz.com" src="https://plausible.io/js/script.js"></script>
-  
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-    
-    // Custom WhatsApp Click Tracking
-    function trackWhatsAppClick(source) {
-      gtag('event', 'whatsapp_click', {
-        'event_category': 'engagement',
-        'event_label': source,
-        'value': 1
-      });
-      
-      // Plausible custom event
-      plausible('WhatsApp Click', { props: { source: source } });
-      
-      // Also track in console for debugging
-      console.log(`WhatsApp clicked from: ${source}`);
-    }
+  <!-- Tawk.to Chat Widget -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65f1234567890abcdef1234567/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
   </script>
 
   <script>
@@ -99,14 +64,16 @@
               purple: '#8b5cf6',
               pink: '#ec4899',
               teal: '#14b8a6',
-              whatsapp: '#25D366'
+              whatsapp: '#25D366',
+              telegram: '#0088cc'
             }
           },
           animation: {
             'blob': 'blob 7s infinite',
             'float': 'float 6s ease-in-out infinite',
             'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            'slide-up': 'slideUp 0.3s ease-out',
+            'slide-up': 'slideUp 0.5s ease-out',
+            'fade-in': 'fadeIn 0.8s ease-out',
           },
           keyframes: {
             blob: {
@@ -120,8 +87,12 @@
               '50%': { transform: 'translateY(-20px)' },
             },
             slideUp: {
-              '0%': { transform: 'translateY(100%)' },
-              '100%': { transform: 'translateY(0)' },
+              '0%': { transform: 'translateY(100%)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
             }
           }
         }
@@ -130,27 +101,43 @@
   </script>
   
   <style>
+    /* Disable Selection & Right Click */
+    body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+    }
+    
+    input, textarea {
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+    
     /* Custom Scrollbar */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #050505; }
     ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #8b5cf6; }
     
-    /* Safe Area for Mobile (iPhone notch) */
+    /* Safe Area */
     .safe-top { padding-top: env(safe-area-inset-top); }
     .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
     
-    /* Glassmorphism Pro */
+    /* Glassmorphism */
     .glass-panel {
-      background: rgba(15, 23, 42, 0.6);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
     
     .glass-nav {
-      background: rgba(5, 5, 5, 0.85);
+      background: rgba(5, 5, 5, 0.9);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -161,42 +148,70 @@
       position: fixed;
       inset: 0;
       z-index: 9999;
-      background: #050505;
+      background: linear-gradient(135deg, #050505 0%, #0f172a 100%);
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      transition: opacity 0.5s ease, visibility 0.5s ease;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
     }
-    .loader-content { text-align: center; }
+    
+    .loader-content {
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+    
     .spinner {
-      width: 50px; height: 50px;
-      border: 3px solid rgba(139, 92, 246, 0.3);
+      width: 60px;
+      height: 60px;
+      border: 4px solid rgba(139, 92, 246, 0.2);
       border-radius: 50%;
       border-top-color: #8b5cf6;
-      animation: spin 1s ease-in-out infinite;
+      animation: spin 1s linear infinite;
     }
-    @keyframes spin { to { transform: rotate(360deg); } }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
     
     /* Text Gradient */
     .text-gradient {
-      background: linear-gradient(to right, #8b5cf6, #ec4899, #14b8a6);
+      background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #14b8a6 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text;
       background-size: 200% auto;
-      animation: gradient-x 5s linear infinite;
-    }
-    @keyframes gradient-x {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      animation: gradientShift 5s ease infinite;
     }
     
-    /* Image Zoom */
-    .img-zoom-container { overflow: hidden; }
-    .img-zoom { transition: transform 0.5s ease; }
-    .img-zoom-container:hover .img-zoom { transform: scale(1.1); }
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% center; }
+      50% { background-position: 100% center; }
+    }
     
-    /* Mobile Bottom Nav */
+    /* Welcome Message */
+    #welcomeMsg {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9998;
+      text-align: center;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    
+    #welcomeMsg.show {
+      opacity: 1;
+    }
+    
+    /* Bottom Nav */
     .bottom-nav {
       background: rgba(5, 5, 5, 0.95);
       backdrop-filter: blur(20px);
@@ -208,71 +223,93 @@
     .nav-item {
       transition: all 0.2s ease;
     }
+    
     .nav-item:active {
       transform: scale(0.9);
     }
+    
     .nav-item.active {
       color: #8b5cf6;
     }
     
-    /* Form Success Animation */
-    .success-checkmark {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: block;
-      stroke-width: 2;
-      stroke: #fff;
-      stroke-miterlimit: 10;
-      margin: 10% auto;
-      box-shadow: inset 0px 0px 0px #14b8a6;
-      animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    /* Card Hover Effects */
+    .tech-card {
+      transition: all 0.3s ease;
     }
-    .checkmark__circle {
-      stroke-dasharray: 166;
-      stroke-dashoffset: 166;
-      stroke-width: 2;
-      stroke-miterlimit: 10;
-      stroke: #14b8a6;
-      fill: none;
-      animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
-    }
-    .checkmark__check {
-      transform-origin: 50% 50%;
-      stroke-dasharray: 48;
-      stroke-dashoffset: 48;
-      animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
-    }
-    @keyframes stroke { 100% { stroke-dashoffset: 0; } }
-    @keyframes scale { 0%, 100% { transform: none; } 50% { transform: scale3d(1.1, 1.1, 1); } }
-    @keyframes fill { 100% { box-shadow: inset 0px 0px 0px 30px #14b8a6; } }
     
-    /* Hide scrollbar for horizontal scroll */
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .tech-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+    }
     
-    /* WhatsApp Float Pulse */
+    /* WhatsApp Pulse */
     @keyframes pulse-green {
       0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
       50% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
     }
+    
     .whatsapp-pulse {
       animation: pulse-green 2s infinite;
     }
+    
+    /* Section Spacing */
+    section {
+      scroll-margin-top: 80px;
+    }
+    
+    /* Image Zoom */
+    .img-zoom-container { overflow: hidden; }
+    .img-zoom { transition: transform 0.5s ease; }
+    .img-zoom-container:hover .img-zoom { transform: scale(1.1); }
+    
+    /* Avatar Styles */
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #8b5cf6;
+      transition: transform 0.3s ease;
+    }
+    
+    .avatar:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+    
+    /* Progress Bar */
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #8b5cf6, #ec4899);
+      z-index: 9999;
+      transition: width 0.1s ease;
+    }
   </style>
 </head>
-<body class="bg-brand-dark text-slate-300 font-sans antialiased overflow-x-hidden selection:bg-brand-purple selection:text-white pb-20 md:pb-0">
+<body class="bg-brand-dark text-slate-300 font-sans antialiased overflow-x-hidden selection:bg-brand-purple selection:text-white pb-24 md:pb-0">
 
-  <!-- LOADING SPLASH SCREEN -->
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+
+  <!-- LOADING SCREEN -->
   <div id="loader">
     <div class="loader-content">
       <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" 
-           alt="STANYTZ Logo" 
-           class="w-24 h-24 rounded-2xl mx-auto mb-4 animate-float shadow-2xl shadow-brand-purple/50 object-cover border-2 border-brand-purple/30">
-      <div class="spinner mx-auto mb-3"></div>
-      <h2 class="text-xl font-display font-bold text-white tracking-widest">STANYTZ</h2>
-      <p class="text-xs text-brand-teal mt-1 uppercase tracking-[0.2em]">Loading Innovation...</p>
+           alt="STANYTZ" 
+           class="w-28 h-28 rounded-2xl mx-auto mb-6 animate-float shadow-2xl shadow-brand-purple/50 object-cover border-4 border-brand-purple/50">
+      <div class="spinner mx-auto mb-4"></div>
+      <h2 class="text-2xl font-display font-bold text-white tracking-widest mb-2">STANYTZ</h2>
+      <p class="text-sm text-brand-teal uppercase tracking-[0.3em] animate-pulse">Loading Innovation...</p>
+      <div class="mt-6 text-xs text-gray-500">Premium Technology Solutions</div>
     </div>
+  </div>
+
+  <!-- WELCOME MESSAGE -->
+  <div id="welcomeMsg" class="glass-panel px-8 py-6 rounded-2xl max-w-md mx-4">
+    <h3 class="text-2xl font-bold text-white mb-2">Karibu STANYTZ! 👋</h3>
+    <p class="text-gray-300 text-sm">Your trusted technology partner in Tanzania. Let's build something amazing together!</p>
   </div>
 
   <!-- BACKGROUND ANIMATION -->
@@ -280,25 +317,27 @@
     <div class="absolute top-0 left-1/4 w-96 h-96 bg-brand-purple/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob"></div>
     <div class="absolute top-0 right-1/4 w-96 h-96 bg-brand-teal/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
     <div class="absolute -bottom-32 left-1/3 w-96 h-96 bg-brand-pink/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
-    <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 contrast-150"></div>
   </div>
 
   <!-- NAVBAR (Desktop) -->
-  <nav class="fixed w-full z-40 glass-nav transition-all duration-300 hidden md:block" id="navbar">
+  <nav class="fixed w-full z-40 glass-nav safe-top hidden md:block" id="navbar">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <a href="#" class="flex items-center gap-3 group">
           <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" 
                alt="STANYTZ" 
-               class="w-10 h-10 rounded-lg object-cover border border-white/10 group-hover:border-brand-purple transition-colors">
-          <span class="text-xl font-display font-bold text-white tracking-tight">STANY<span class="text-brand-purple">TZ</span></span>
+               class="w-10 h-10 rounded-lg object-cover border-2 border-brand-purple/50 group-hover:border-brand-purple transition-colors">
+          <span class="text-xl font-display font-bold text-white">STANY<span class="text-brand-purple">TZ</span></span>
         </a>
-        <div class="ml-10 flex items-baseline space-x-8">
-          <a href="#home" class="hover:text-white transition-colors text-sm font-medium">Home</a>
-          <a href="#services" class="hover:text-white transition-colors text-sm font-medium">Services</a>
-          <a href="#work" class="hover:text-white transition-colors text-sm font-medium">Portfolio</a>
-          <a href="#about" class="hover:text-white transition-colors text-sm font-medium">About</a>
-          <a href="#contact" class="px-5 py-2.5 rounded-full bg-white/10 hover:bg-brand-purple hover:text-white border border-white/10 hover:border-brand-purple transition-all text-sm font-semibold backdrop-blur-md">
+        <div class="flex items-center gap-6">
+          <a href="#home" class="text-sm font-medium hover:text-white transition">Home</a>
+          <a href="#services" class="text-sm font-medium hover:text-white transition">Services</a>
+          <a href="#technologies" class="text-sm font-medium hover:text-white transition">Technologies</a>
+          <a href="#portfolio" class="text-sm font-medium hover:text-white transition">Portfolio</a>
+          <a href="#advice" class="text-sm font-medium hover:text-white transition">Advice</a>
+          <a href="#help" class="text-sm font-medium hover:text-white transition">Help</a>
+          <a href="#contributors" class="text-sm font-medium hover:text-white transition">Team</a>
+          <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-brand-purple to-brand-pink text-white text-sm font-semibold hover:shadow-lg hover:shadow-brand-purple/30 transition">
             Get Started
           </a>
         </div>
@@ -321,8 +360,8 @@
     </div>
   </div>
 
-  <!-- MOBILE MENU OVERLAY -->
-  <div id="mobileMenu" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl hidden md:hidden safe-top">
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="fixed inset-0 z-50 bg-black/98 backdrop-blur-xl hidden md:hidden safe-top">
     <div class="flex flex-col h-full p-6">
       <div class="flex justify-between items-center mb-8">
         <span class="text-2xl font-display font-bold text-white">Menu</span>
@@ -330,12 +369,15 @@
           <i class="fas fa-times text-2xl"></i>
         </button>
       </div>
-      <nav class="flex flex-col gap-4 text-center">
-        <a href="#home" onclick="toggleMobileMenu()" class="text-2xl font-semibold text-white py-4 border-b border-white/10">Home</a>
-        <a href="#services" onclick="toggleMobileMenu()" class="text-2xl font-semibold text-gray-400 py-4 border-b border-white/10">Services</a>
-        <a href="#work" onclick="toggleMobileMenu()" class="text-2xl font-semibold text-gray-400 py-4 border-b border-white/10">Portfolio</a>
-        <a href="#about" onclick="toggleMobileMenu()" class="text-2xl font-semibold text-gray-400 py-4 border-b border-white/10">About</a>
-        <a href="#contact" onclick="toggleMobileMenu()" class="text-2xl font-semibold text-brand-teal py-4">Contact</a>
+      <nav class="flex flex-col gap-2">
+        <a href="#home" onclick="toggleMobileMenu()" class="text-xl font-semibold text-white py-4 px-4 rounded-lg hover:bg-white/10 transition">Home</a>
+        <a href="#services" onclick="toggleMobileMenu()" class="text-xl font-semibold text-gray-400 py-4 px-4 rounded-lg hover:bg-white/10 transition">Services</a>
+        <a href="#technologies" onclick="toggleMobileMenu()" class="text-xl font-semibold text-gray-400 py-4 px-4 rounded-lg hover:bg-white/10 transition">Technologies</a>
+        <a href="#portfolio" onclick="toggleMobileMenu()" class="text-xl font-semibold text-gray-400 py-4 px-4 rounded-lg hover:bg-white/10 transition">Portfolio</a>
+        <a href="#advice" onclick="toggleMobileMenu()" class="text-xl font-semibold text-gray-400 py-4 px-4 rounded-lg hover:bg-white/10 transition">Advice</a>
+        <a href="#help" onclick="toggleMobileMenu()" class="text-xl font-semibold text-gray-400 py-4 px-4 rounded-lg hover:bg-white/10 transition">Help Center</a>
+        <a href="#contributors" onclick="toggleMobileMenu()" class="text-xl font-semibold text-gray-400 py-4 px-4 rounded-lg hover:bg-white/10 transition">Our Team</a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="text-xl font-semibold text-brand-teal py-4 px-4 rounded-lg hover:bg-white/10 transition">Contact</a>
       </nav>
     </div>
   </div>
@@ -343,163 +385,569 @@
   <!-- HERO SECTION -->
   <section id="home" class="relative z-10 min-h-screen flex items-center justify-center pt-20 md:pt-32 pb-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-12">
-      
-      <div class="lg:w-1/2 text-center lg:text-left" data-aos="fade-right" data-aos-duration="1000">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border border-brand-purple/30 mb-6">
+      <div class="lg:w-1/2 text-center lg:text-left" data-aos="fade-right">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel border border-brand-purple/50 mb-6">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-teal opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-teal"></span>
           </span>
-          <span class="text-xs font-semibold text-brand-teal uppercase tracking-wider">Available for Projects</span>
+          <span class="text-xs font-bold text-brand-teal uppercase tracking-wider">Available for Projects</span>
         </div>
         
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold text-white leading-tight mb-6">
-          Building the <br>
-          <span class="text-gradient">Digital Future</span>
+          Building <span class="text-gradient">Digital Future</span> for Africa
         </h1>
         
-        <p class="text-lg text-gray-400 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-          STANYTZ delivers world-class software, AI automation, and web solutions tailored for the African market and beyond.
+        <p class="text-lg text-gray-400 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+          STANYTZ delivers world-class software development, AI automation, WhatsApp bots, and mobile solutions. Transform your business with cutting-edge technology.
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-          <a href="#contact" class="px-8 py-4 rounded-full bg-gradient-to-r from-brand-purple to-brand-pink text-white font-bold shadow-lg shadow-brand-purple/25 hover:shadow-brand-purple/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
-            Start Project <i class="fas fa-arrow-right"></i>
+          <a href="#contact" class="px-8 py-4 rounded-full bg-gradient-to-r from-brand-purple to-brand-pink text-white font-bold shadow-lg shadow-brand-purple/30 hover:shadow-brand-purple/50 hover:-translate-y-1 transition-all flex items-center justify-center gap-2">
+            <i class="fas fa-rocket"></i> Start Project
           </a>
           <a href="https://wa.me/255787069580?text=Hello%20STANYTZ" 
              target="_blank"
-             onclick="trackWhatsAppClick('hero_section')"
-             class="px-8 py-4 rounded-full glass-panel text-white font-semibold hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2">
-            <i class="fab fa-whatsapp text-brand-whatsapp"></i> Chat Now
+             class="px-8 py-4 rounded-full glass-panel text-white font-semibold hover:bg-white/10 transition flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp text-2xl text-brand-whatsapp"></i> Chat Now
           </a>
         </div>
 
-        <!-- Real-time Stats -->
+        <!-- Stats -->
         <div class="grid grid-cols-3 gap-4 border-t border-white/10 pt-8">
           <div>
-            <div class="text-2xl font-bold text-white" id="stat-projects">0</div>
-            <div class="text-xs text-gray-500 uppercase">Projects</div>
+            <div class="text-3xl font-bold text-white" id="statProjects">0</div>
+            <div class="text-xs text-gray-500 uppercase mt-1">Projects</div>
           </div>
           <div>
-            <div class="text-2xl font-bold text-white" id="stat-clients">0</div>
-            <div class="text-xs text-gray-500 uppercase">Clients</div>
+            <div class="text-3xl font-bold text-white" id="statClients">0</div>
+            <div class="text-xs text-gray-500 uppercase mt-1">Clients</div>
           </div>
           <div>
-            <div class="text-2xl font-bold text-white">24/7</div>
-            <div class="text-xs text-gray-500 uppercase">Support</div>
+            <div class="text-3xl font-bold text-white">24/7</div>
+            <div class="text-xs text-gray-500 uppercase mt-1">Support</div>
           </div>
         </div>
       </div>
 
-      <div class="lg:w-1/2 flex justify-center lg:justify-end" data-aos="fade-left" data-aos-duration="1000">
-        <div class="relative w-full max-w-md">
-          <div class="absolute -inset-1 bg-gradient-to-r from-brand-purple to-brand-teal rounded-2xl blur opacity-30 animate-pulse"></div>
-          <div class="relative glass-panel rounded-2xl p-2 border border-white/10">
+      <div class="lg:w-1/2 flex justify-center" data-aos="fade-left">
+        <div class="relative">
+          <div class="absolute -inset-2 bg-gradient-to-r from-brand-purple to-brand-teal rounded-3xl blur opacity-40 animate-pulse"></div>
+          <div class="relative glass-panel rounded-3xl p-3 border border-white/20">
             <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" 
                  alt="STANYTZ Innovation" 
-                 class="rounded-xl w-full h-auto object-cover shadow-2xl">
-            <div class="absolute -bottom-6 -left-6 glass-panel p-4 rounded-xl border border-white/10 flex items-center gap-3 animate-float">
-              <div class="w-10 h-10 rounded-full bg-brand-teal/20 flex items-center justify-center text-brand-teal">
-                <i class="fas fa-code"></i>
-              </div>
-              <div>
-                <div class="text-xs text-gray-400">Technology</div>
-                <div class="text-sm font-bold text-white">Cutting Edge</div>
-              </div>
-            </div>
+                 class="rounded-2xl w-full max-w-md object-cover shadow-2xl">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES SECTION -->
+  <!-- SERVICES SECTION (20+ Services) -->
   <section id="services" class="py-20 md:py-32 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-brand-teal font-semibold tracking-wide uppercase text-sm mb-2">Our Expertise</h2>
-        <h3 class="text-3xl md:text-5xl font-display font-bold text-white">Premium Services</h3>
+        <h2 class="text-brand-teal font-bold tracking-wide uppercase text-sm mb-3">What We Offer</h2>
+        <h3 class="text-3xl md:text-5xl font-display font-bold text-white mb-4">Our Premium Services</h3>
+        <p class="text-gray-400 max-w-2xl mx-auto">Comprehensive technology solutions tailored to accelerate your business growth and digital transformation.</p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        <div class="glass-panel p-6 md:p-8 rounded-2xl hover:bg-white/5 transition duration-300 group" data-aos="fade-up" data-aos-delay="100">
-          <div class="w-14 h-14 rounded-xl bg-brand-purple/20 flex items-center justify-center text-brand-purple text-2xl mb-6 group-hover:scale-110 transition">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Service 1 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-14 h-14 rounded-xl bg-brand-purple/20 flex items-center justify-center text-brand-purple text-2xl mb-4">
             <i class="fas fa-laptop-code"></i>
           </div>
-          <h4 class="text-xl font-bold text-white mb-3">Custom Software</h4>
-          <p class="text-gray-400 text-sm leading-relaxed">Tailor-made applications built with React, Node.js, and Python.</p>
+          <h4 class="text-lg font-bold text-white mb-2">Custom Software</h4>
+          <p class="text-gray-400 text-sm">Bespoke applications built with modern frameworks tailored to your business needs.</p>
         </div>
 
-        <div class="glass-panel p-6 md:p-8 rounded-2xl hover:bg-white/5 transition duration-300 group" data-aos="fade-up" data-aos-delay="200">
-          <div class="w-14 h-14 rounded-xl bg-brand-teal/20 flex items-center justify-center text-brand-teal text-2xl mb-6 group-hover:scale-110 transition">
+        <!-- Service 2 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-14 h-14 rounded-xl bg-brand-whatsapp/20 flex items-center justify-center text-brand-whatsapp text-2xl mb-4">
             <i class="fab fa-whatsapp"></i>
           </div>
-          <h4 class="text-xl font-bold text-white mb-3">WhatsApp Automation</h4>
-          <p class="text-gray-400 text-sm leading-relaxed">Advanced bots for customer support and automated notifications 24/7.</p>
+          <h4 class="text-lg font-bold text-white mb-2">WhatsApp Automation</h4>
+          <p class="text-gray-400 text-sm">Advanced chatbots for customer support, sales, and automated notifications.</p>
         </div>
 
-        <div class="glass-panel p-6 md:p-8 rounded-2xl hover:bg-white/5 transition duration-300 group" data-aos="fade-up" data-aos-delay="300">
-          <div class="w-14 h-14 rounded-xl bg-brand-pink/20 flex items-center justify-center text-brand-pink text-2xl mb-6 group-hover:scale-110 transition">
+        <!-- Service 3 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-14 h-14 rounded-xl bg-brand-teal/20 flex items-center justify-center text-brand-teal text-2xl mb-4">
             <i class="fas fa-brain"></i>
           </div>
-          <h4 class="text-xl font-bold text-white mb-3">AI & Machine Learning</h4>
-          <p class="text-gray-400 text-sm leading-relaxed">Predictive analytics and intelligent chatbots for your business.</p>
+          <h4 class="text-lg font-bold text-white mb-2">AI & Machine Learning</h4>
+          <p class="text-gray-400 text-sm">Intelligent systems that learn, predict, and automate complex tasks.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="w-14 h-14 rounded-xl bg-brand-pink/20 flex items-center justify-center text-brand-pink text-2xl mb-4">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Mobile Apps</h4>
+          <p class="text-gray-400 text-sm">Native and cross-platform mobile applications for iOS and Android.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="w-14 h-14 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 text-2xl mb-4">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Cloud Solutions</h4>
+          <p class="text-gray-400 text-sm">Scalable cloud infrastructure on AWS, Google Cloud, and Azure.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="w-14 h-14 rounded-xl bg-yellow-500/20 flex items-center justify-center text-yellow-400 text-2xl mb-4">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">UI/UX Design</h4>
+          <p class="text-gray-400 text-sm">Beautiful, intuitive interfaces that enhance user experience.</p>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="700">
+          <div class="w-14 h-14 rounded-xl bg-green-500/20 flex items-center justify-center text-green-400 text-2xl mb-4">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">E-Commerce</h4>
+          <p class="text-gray-400 text-sm">Complete online store solutions with payment integration.</p>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="800">
+          <div class="w-14 h-14 rounded-xl bg-red-500/20 flex items-center justify-center text-red-400 text-2xl mb-4">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Cybersecurity</h4>
+          <p class="text-gray-400 text-sm">Protect your business with advanced security solutions.</p>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="900">
+          <div class="w-14 h-14 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-4">
+            <i class="fas fa-database"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Database Management</h4>
+          <p class="text-gray-400 text-sm">Efficient data storage, retrieval, and management systems.</p>
+        </div>
+
+        <!-- Service 10 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="1000">
+          <div class="w-14 h-14 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-4">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Data Analytics</h4>
+          <p class="text-gray-400 text-sm">Transform data into actionable business insights.</p>
+        </div>
+
+        <!-- Service 11 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="1100">
+          <div class="w-14 h-14 rounded-xl bg-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-4">
+            <i class="fas fa-video"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Video Streaming</h4>
+          <p class="text-gray-400 text-sm">Live and on-demand video streaming platforms.</p>
+        </div>
+
+        <!-- Service 12 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="1200">
+          <div class="w-14 h-14 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-4">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Game Development</h4>
+          <p class="text-gray-400 text-sm">Engaging mobile and web games with stunning graphics.</p>
+        </div>
+
+        <!-- Service 13 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="1300">
+          <div class="w-14 h-14 rounded-xl bg-orange-500/20 flex items-center justify-center text-orange-400 text-2xl mb-4">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">E-Learning Platforms</h4>
+          <p class="text-gray-400 text-sm">Online education systems with course management.</p>
+        </div>
+
+        <!-- Service 14 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="1400">
+          <div class="w-14 h-14 rounded-xl bg-teal-500/20 flex items-center justify-center text-teal-400 text-2xl mb-4">
+            <i class="fas fa-hospital"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Healthcare Solutions</h4>
+          <p class="text-gray-400 text-sm">Digital health platforms and telemedicine apps.</p>
+        </div>
+
+        <!-- Service 15 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="1500">
+          <div class="w-14 h-14 rounded-xl bg-lime-500/20 flex items-center justify-center text-lime-400 text-2xl mb-4">
+            <i class="fas fa-tractor"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">AgriTech Solutions</h4>
+          <p class="text-gray-400 text-sm">Technology for modern farming and agriculture.</p>
+        </div>
+
+        <!-- Service 16 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="1600">
+          <div class="w-14 h-14 rounded-xl bg-rose-500/20 flex items-center justify-center text-rose-400 text-2xl mb-4">
+            <i class="fas fa-wallet"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">FinTech Apps</h4>
+          <p class="text-gray-400 text-sm">Secure payment and financial management solutions.</p>
+        </div>
+
+        <!-- Service 17 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="1700">
+          <div class="w-14 h-14 rounded-xl bg-violet-500/20 flex items-center justify-center text-violet-400 text-2xl mb-4">
+            <i class="fas fa-bus"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Transport & Logistics</h4>
+          <p class="text-gray-400 text-sm">Fleet management and delivery tracking systems.</p>
+        </div>
+
+        <!-- Service 18 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="1800">
+          <div class="w-14 h-14 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-4">
+            <i class="fas fa-home"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Real Estate Tech</h4>
+          <p class="text-gray-400 text-sm">Property management and listing platforms.</p>
+        </div>
+
+        <!-- Service 19 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="1900">
+          <div class="w-14 h-14 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl mb-4">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">IoT Solutions</h4>
+          <p class="text-gray-400 text-sm">Internet of Things devices and smart systems.</p>
+        </div>
+
+        <!-- Service 20 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="2000">
+          <div class="w-14 h-14 rounded-xl bg-sky-500/20 flex items-center justify-center text-sky-400 text-2xl mb-4">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Digital Marketing</h4>
+          <p class="text-gray-400 text-sm">SEO, social media, and online advertising strategies.</p>
+        </div>
+
+        <!-- Service 21 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="2100">
+          <div class="w-14 h-14 rounded-xl bg-fuchsia-500/20 flex items-center justify-center text-fuchsia-400 text-2xl mb-4">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">IT Consulting</h4>
+          <p class="text-gray-400 text-sm">Strategic technology advisory and implementation.</p>
+        </div>
+
+        <!-- Service 22 -->
+        <div class="glass-panel p-6 rounded-2xl tech-card" data-aos="fade-up" data-aos-delay="2200">
+          <div class="w-14 h-14 rounded-xl bg-neutral-500/20 flex items-center justify-center text-neutral-400 text-2xl mb-4">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Maintenance & Support</h4>
+          <p class="text-gray-400 text-sm">24/7 technical support and system maintenance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGIES SECTION -->
+  <section id="technologies" class="py-20 md:py-32 relative z-10 bg-black/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-brand-purple font-bold tracking-wide uppercase text-sm mb-3">Tech Stack</h2>
+        <h3 class="text-3xl md:text-5xl font-display font-bold text-white mb-4">Technologies We Use</h3>
+        <p class="text-gray-400 max-w-2xl mx-auto">Industry-leading technologies to build scalable, secure, and high-performance applications.</p>
+      </div>
+
+      <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div class="glass-panel p-6 rounded-xl text-center tech-card" data-aos="zoom-in">
+          <i class="fab fa-react text-4xl text-cyan-400 mb-3"></i>
+          <div class="text-sm font-semibold text-white">React</div>
+        </div>
+        <div class="glass-panel p-6 rounded-xl text-center tech-card" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fab fa-node text-4xl text-green-500 mb-3"></i>
+          <div class="text-sm font-semibold text-white">Node.js</div>
+        </div>
+        <div class="glass-panel p-6 rounded-xl text-center tech-card" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fab fa-python text-4xl text-yellow-400 mb-3"></i>
+          <div class="text-sm font-semibold text-white">Python</div>
+        </div>
+        <div class="glass-panel p-6 rounded-xl text-center tech-card" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fab fa-js text-4xl text-yellow-300 mb-3"></i>
+          <div class="text-sm font-semibold text-white">JavaScript</div>
+        </div>
+        <div class="glass-panel p-6 rounded-xl text-center tech-card" data-aos="zoom-in" data-aos-delay="400">
+          <i class="fab fa-aws text-4xl text-orange-500 mb-3"></i>
+          <div class="text-sm font-semibold text-white">AWS</div>
+        </div>
+        <div class="glass-panel p-6 rounded-xl text-center tech-card" data-aos="zoom-in" data-aos-delay="500">
+          <i class="fas fa-database text-4xl text-green-400 mb-3"></i>
+          <div class="text-sm font-semibold text-white">MongoDB</div>
+        </div>
+        <div class="glass-panel p-6 rounded-xl text-center tech-card" data-aos="zoom-in" data-aos-delay="600">
+          <i class="fab fa-docker text-4xl text-blue-500 mb-3"></i>
+          <div class="text-sm font-semibold text-white">Docker</div>
+        </div>
+        <div class="glass-panel p-6 rounded-xl text-center tech-card" data-aos="zoom-in" data-aos-delay="700">
+          <i class="fab fa-git-alt text-4xl text-red-500 mb-3"></i>
+          <div class="text-sm font-semibold text-white">Git</div>
+        </div>
+        <div class="glass-panel p-6 rounded-xl text-center tech-card" data-aos="zoom-in" data-aos-delay="800">
+          <i class="fab fa-android text-4xl text-green-600 mb-3"></i>
+          <div class="text-sm font-semibold text-white">Android</div>
+        </div>
+        <div class="glass-panel p-6 rounded-xl text-center tech-card" data-aos="zoom-in" data-aos-delay="900">
+          <i class="fab fa-apple text-4xl text-gray-300 mb-3"></i>
+          <div class="text-sm font-semibold text-white">iOS</div>
+        </div>
+        <div class="glass-panel p-6 rounded-xl text-center tech-card" data-aos="zoom-in" data-aos-delay="1000">
+          <i class="fab fa-php text-4xl text-purple-500 mb-3"></i>
+          <div class="text-sm font-semibold text-white">PHP</div>
+        </div>
+        <div class="glass-panel p-6 rounded-xl text-center tech-card" data-aos="zoom-in" data-aos-delay="1100">
+          <i class="fas fa-wind text-4xl text-cyan-300 mb-3"></i>
+          <div class="text-sm font-semibold text-white">Tailwind</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- PORTFOLIO SECTION -->
-  <section id="work" class="py-20 md:py-32 relative z-10 bg-black/20">
+  <section id="portfolio" class="py-20 md:py-32 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-right">
-        <div>
-          <h2 class="text-3xl md:text-5xl font-display font-bold text-white mb-2">Featured Work</h2>
-          <p class="text-gray-400">Recent projects delivered with excellence.</p>
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-brand-pink font-bold tracking-wide uppercase text-sm mb-3">Our Work</h2>
+        <h3 class="text-3xl md:text-5xl font-display font-bold text-white mb-4">Featured Projects</h3>
+        <p class="text-gray-400 max-w-2xl mx-auto">Showcasing our best work and successful client partnerships.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="group relative rounded-2xl overflow-hidden" data-aos="fade-up">
+          <div class="aspect-video bg-gradient-to-br from-purple-900 to-pink-900 img-zoom-container">
+            <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" class="w-full h-full object-cover img-zoom" alt="Project">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <span class="text-xs font-bold text-brand-teal bg-brand-teal/20 px-3 py-1 rounded-full mb-2 inline-block">Automation</span>
+            <h4 class="text-xl font-bold text-white mb-2">STANY FREE BOT</h4>
+            <p class="text-gray-300 text-sm">Advanced WhatsApp automation with AI responses and business integration.</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <div class="aspect-video bg-gradient-to-br from-blue-900 to-cyan-900 img-zoom-container">
+            <div class="w-full h-full flex items-center justify-center">
+              <i class="fas fa-shopping-bag text-6xl text-white/20"></i>
+            </div>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <span class="text-xs font-bold text-brand-pink bg-brand-pink/20 px-3 py-1 rounded-full mb-2 inline-block">E-Commerce</span>
+            <h4 class="text-xl font-bold text-white mb-2">Online Store Platform</h4>
+            <p class="text-gray-300 text-sm">Complete e-commerce solution with payment gateway integration.</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <div class="aspect-video bg-gradient-to-br from-green-900 to-teal-900 img-zoom-container">
+            <div class="w-full h-full flex items-center justify-center">
+              <i class="fas fa-mobile-alt text-6xl text-white/20"></i>
+            </div>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <span class="text-xs font-bold text-brand-purple bg-brand-purple/20 px-3 py-1 rounded-full mb-2 inline-block">Mobile App</span>
+            <h4 class="text-xl font-bold text-white mb-2">Delivery App</h4>
+            <p class="text-gray-300 text-sm">Real-time delivery tracking and management mobile application.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVICE SECTION -->
+  <section id="advice" class="py-20 md:py-32 relative z-10 bg-black/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-brand-teal font-bold tracking-wide uppercase text-sm mb-3">Expert Guidance</h2>
+        <h3 class="text-3xl md:text-5xl font-display font-bold text-white mb-4">Technology Advice</h3>
+        <p class="text-gray-400 max-w-2xl mx-auto">Professional tips and recommendations for your digital transformation journey.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="glass-panel p-6 rounded-2xl" data-aos="fade-up">
+          <div class="w-12 h-12 rounded-full bg-brand-purple/20 flex items-center justify-center text-brand-purple text-xl mb-4">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-3">Start Small, Scale Fast</h4>
+          <p class="text-gray-400 text-sm">Begin with an MVP (Minimum Viable Product) and iterate based on user feedback. Don't over-engineer from day one.</p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 rounded-full bg-brand-teal/20 flex items-center justify-center text-brand-teal text-xl mb-4">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-3">Security First</h4>
+          <p class="text-gray-400 text-sm">Implement security measures from the beginning. Data breaches can destroy trust and your business reputation.</p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 rounded-full bg-brand-pink/20 flex items-center justify-center text-brand-pink text-xl mb-4">
+            <i class="fas fa-users"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-3">User-Centric Design</h4>
+          <p class="text-gray-400 text-sm">Always design with your end users in mind. Conduct user research and usability testing regularly.</p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-12 h-12 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-400 text-xl mb-4">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-3">Embrace Cloud</h4>
+          <p class="text-gray-400 text-sm">Cloud infrastructure offers scalability, reliability, and cost-effectiveness for modern businesses.</p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="400">
+          <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xl mb-4">
+            <i class="fas fa-sync-alt"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-3">Automate Processes</h4>
+          <p class="text-gray-400 text-sm">Identify repetitive tasks and automate them. Save time, reduce errors, and increase efficiency.</p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="500">
+          <div class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 text-xl mb-4">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-3">Data-Driven Decisions</h4>
+          <p class="text-gray-400 text-sm">Use analytics and data to make informed business decisions rather than relying on intuition alone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HELP CENTER SECTION -->
+  <section id="help" class="py-20 md:py-32 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-brand-purple font-bold tracking-wide uppercase text-sm mb-3">Support</h2>
+        <h3 class="text-3xl md:text-5xl font-display font-bold text-white mb-4">Help Center</h3>
+        <p class="text-gray-400 max-w-2xl mx-auto">Find answers to common questions and get the support you need.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="glass-panel p-6 rounded-2xl" data-aos="fade-right">
+          <h4 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+            <i class="fas fa-question-circle text-brand-teal"></i>
+            Frequently Asked Questions
+          </h4>
+          <div class="space-y-3">
+            <details class="group">
+              <summary class="flex justify-between items-center cursor-pointer text-gray-300 hover:text-white py-2">
+                <span>How long does a project take?</span>
+                <i class="fas fa-chevron-down text-sm transition group-open:rotate-180"></i>
+              </summary>
+              <p class="text-gray-400 text-sm mt-2">Project timelines vary based on complexity. Simple websites take 1-2 weeks, while complex applications can take 2-6 months.</p>
+            </details>
+            <hr class="border-white/10">
+            <details class="group">
+              <summary class="flex justify-between items-center cursor-pointer text-gray-300 hover:text-white py-2">
+                <span>What is your pricing model?</span>
+                <i class="fas fa-chevron-down text-sm transition group-open:rotate-180"></i>
+              </summary>
+              <p class="text-gray-400 text-sm mt-2">We offer fixed-price projects and hourly rates. Contact us for a detailed quote based on your requirements.</p>
+            </details>
+            <hr class="border-white/10">
+            <details class="group">
+              <summary class="flex justify-between items-center cursor-pointer text-gray-300 hover:text-white py-2">
+                <span>Do you provide maintenance?</span>
+                <i class="fas fa-chevron-down text-sm transition group-open:rotate-180"></i>
+              </summary>
+              <p class="text-gray-400 text-sm mt-2">Yes! We offer ongoing maintenance and support packages to keep your systems running smoothly.</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl" data-aos="fade-left">
+          <h4 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+            <i class="fas fa-headset text-brand-pink"></i>
+            Get In Touch
+          </h4>
+          <div class="space-y-4">
+            <a href="https://wa.me/255787069580" target="_blank" class="flex items-center gap-3 p-3 rounded-lg bg-brand-whatsapp/10 hover:bg-brand-whatsapp/20 transition">
+              <i class="fab fa-whatsapp text-2xl text-brand-whatsapp"></i>
+              <div>
+                <div class="text-white font-semibold">WhatsApp</div>
+                <div class="text-sm text-gray-400">+255 787 069 580</div>
+              </div>
+            </a>
+            <a href="https://t.me/StanyTz076" target="_blank" class="flex items-center gap-3 p-3 rounded-lg bg-brand-telegram/10 hover:bg-brand-telegram/20 transition">
+              <i class="fab fa-telegram text-2xl text-brand-telegram"></i>
+              <div>
+                <div class="text-white font-semibold">Telegram</div>
+                <div class="text-sm text-gray-400">@StanyTz076</div>
+              </div>
+            </a>
+            <a href="mailto:officialstanlee143@gmail.com" class="flex items-center gap-3 p-3 rounded-lg bg-red-500/10 hover:bg-red-500/20 transition">
+              <i class="fas fa-envelope text-2xl text-red-500"></i>
+              <div>
+                <div class="text-white font-semibold">Email</div>
+                <div class="text-sm text-gray-400">officialstanlee143@gmail.com</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTRIBUTORS SECTION -->
+  <section id="contributors" class="py-20 md:py-32 relative z-10 bg-black/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-brand-pink font-bold tracking-wide uppercase text-sm mb-3">Our Team</h2>
+        <h3 class="text-3xl md:text-5xl font-display font-bold text-white mb-4">Special Thanks to Contributors</h3>
+        <p class="text-gray-400 max-w-2xl mx-auto">Meet the talented individuals and teams who contribute to our success.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Contributor 1 -->
+        <div class="glass-panel p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-4xl font-bold text-white">
+            KT
+          </div>
+          <h4 class="text-xl font-bold text-white mb-1">Katanda Tech</h4>
+          <p class="text-brand-purple text-sm mb-3">Technology Partner</p>
+          <p class="text-gray-400 text-sm">Contributing expertise in software architecture and cloud solutions.</p>
+        </div>
+
+        <!-- Contributor 2 -->
+        <div class="glass-panel p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-4xl font-bold text-white">
+            RT
+          </div>
+          <h4 class="text-xl font-bold text-white mb-1">RedTech</h4>
+          <p class="text-brand-pink text-sm mb-3">Development Partner</p>
+          <p class="text-gray-400 text-sm">Specializing in mobile app development and UI/UX design.</p>
+        </div>
+
+        <!-- Contributor 3 -->
+        <div class="glass-panel p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-teal-500 to-cyan-500 flex items-center justify-center text-4xl font-bold text-white">
+            TT
+          </div>
+          <h4 class="text-xl font-bold text-white mb-1">TimnasaTech</h4>
+          <p class="text-brand-teal text-sm mb-3">Innovation Partner</p>
+          <p class="text-gray-400 text-sm">Driving innovation in AI and automation technologies.</p>
         </div>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        <div class="group relative rounded-2xl overflow-hidden cursor-pointer" data-aos="zoom-in">
-          <div class="aspect-video bg-gray-800 img-zoom-container">
-            <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" 
-                 class="w-full h-full object-cover img-zoom opacity-80 group-hover:opacity-100" alt="Bot Project">
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"></div>
-          <div class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition duration-300">
-            <span class="text-xs font-bold text-brand-teal bg-brand-teal/10 px-2 py-1 rounded mb-2 inline-block">Automation</span>
-            <h3 class="text-xl font-bold text-white">STANY FREE BOT</h3>
-            <p class="text-gray-300 text-sm mt-2 opacity-0 group-hover:opacity-100 transition delay-100">Advanced WhatsApp automation tool.</p>
-          </div>
-        </div>
-
-        <div class="group relative rounded-2xl overflow-hidden cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
-          <div class="aspect-video bg-gray-800 img-zoom-container">
-            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-indigo-900 to-purple-900">
-              <i class="fas fa-chart-line text-4xl text-white/20"></i>
-            </div>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"></div>
-          <div class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition duration-300">
-            <span class="text-xs font-bold text-brand-pink bg-brand-pink/10 px-2 py-1 rounded mb-2 inline-block">Analytics</span>
-            <h3 class="text-xl font-bold text-white">Business Dashboard</h3>
-            <p class="text-gray-300 text-sm mt-2 opacity-0 group-hover:opacity-100 transition delay-100">Real-time data visualization.</p>
-          </div>
-        </div>
-
-        <div class="group relative rounded-2xl overflow-hidden cursor-pointer" data-aos="zoom-in" data-aos-delay="200">
-          <div class="aspect-video bg-gray-800 img-zoom-container">
-            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-teal-900 to-emerald-900">
-              <i class="fas fa-mobile-alt text-4xl text-white/20"></i>
-            </div>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"></div>
-          <div class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition duration-300">
-            <span class="text-xs font-bold text-brand-purple bg-brand-purple/10 px-2 py-1 rounded mb-2 inline-block">Mobile App</span>
-            <h3 class="text-xl font-bold text-white">E-Commerce Platform</h3>
-            <p class="text-gray-300 text-sm mt-2 opacity-0 group-hover:opacity-100 transition delay-100">Full-stack mobile application.</p>
-          </div>
-        </div>
+      <div class="text-center mt-12" data-aos="fade-up">
+        <p class="text-gray-400 italic">"Great things in business are never done by one person. They're done by a team of people."</p>
       </div>
     </div>
   </section>
@@ -507,116 +955,113 @@
   <!-- CONTACT SECTION -->
   <section id="contact" class="py-20 md:py-32 relative z-10">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="glass-panel rounded-3xl p-6 md:p-12 border border-white/10" data-aos="fade-up">
+      <div class="glass-panel rounded-3xl p-8 md:p-12 border border-white/10" data-aos="fade-up">
         <div class="text-center mb-10">
-          <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-4">Let's Build Something Great</h2>
-          <p class="text-gray-400">Send us a message or chat directly on WhatsApp.</p>
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-4">Let's Build Together</h2>
+          <p class="text-gray-400">Ready to start your project? Get in touch with us today.</p>
         </div>
 
-        <!-- Form Success Message -->
-        <div id="formSuccess" class="hidden text-center py-12">
-          <svg class="success-checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-          </svg>
-          <h3 class="text-2xl font-bold text-white mb-2">Message Sent!</h3>
-          <p class="text-gray-400 mb-6">We'll get back to you within 24 hours.</p>
-          <button onclick="resetForm()" class="px-6 py-3 rounded-full bg-brand-purple text-white font-semibold hover:bg-brand-purple/80 transition">
-            Send Another
-          </button>
-        </div>
-
-        <!-- Contact Form -->
         <form id="contactForm" class="space-y-4" onsubmit="handleSubmit(event)">
           <div class="grid md:grid-cols-2 gap-4">
             <div>
-              <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Name *</label>
+              <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Full Name *</label>
               <input type="text" id="contactName" required class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple transition" placeholder="John Doe">
             </div>
             <div>
-              <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Phone</label>
+              <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Phone Number</label>
               <input type="tel" id="contactPhone" class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple transition" placeholder="+255 787 069 580">
             </div>
           </div>
           
           <div>
-            <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Email *</label>
+            <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Email Address *</label>
             <input type="email" id="contactEmail" required class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple transition" placeholder="john@example.com">
           </div>
           
           <div>
-            <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Service Interested In</label>
-            <select id="contactService" class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple transition">
+            <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Service Required *</label>
+            <select id="contactService" required class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple transition">
+              <option value="">Select a service...</option>
               <option value="Custom Software">Custom Software Development</option>
               <option value="WhatsApp Bot">WhatsApp Automation Bot</option>
+              <option value="Mobile App">Mobile Application</option>
+              <option value="Web Design">Web Design & Development</option>
               <option value="AI/ML">AI & Machine Learning</option>
-              <option value="Web Design">Web Design</option>
-              <option value="Mobile App">Mobile App</option>
+              <option value="Cloud">Cloud Solutions</option>
               <option value="Other">Other</option>
             </select>
           </div>
           
           <div>
-            <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Message *</label>
-            <textarea id="contactMessage" rows="4" required class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple transition" placeholder="Tell us about your project..."></textarea>
+            <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Project Details *</label>
+            <textarea id="contactMessage" rows="4" required class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple transition resize-none" placeholder="Tell us about your project, timeline, and budget..."></textarea>
           </div>
           
           <div class="flex flex-col sm:flex-row gap-3 pt-4">
-            <button type="submit" id="submitBtn" class="flex-1 py-4 rounded-lg bg-gradient-to-r from-brand-purple to-brand-pink text-white font-bold hover:shadow-lg hover:shadow-brand-purple/30 transition transform hover:-translate-y-1 flex items-center justify-center gap-2">
+            <button type="submit" id="submitBtn" class="flex-1 py-4 rounded-lg bg-gradient-to-r from-brand-purple to-brand-pink text-white font-bold hover:shadow-lg hover:shadow-brand-purple/30 transition flex items-center justify-center gap-2">
               <i class="fas fa-paper-plane"></i> Send Message
             </button>
-            <button type="button" onclick="sendToWhatsApp()" class="flex-1 py-4 rounded-lg bg-[#25D366] text-white font-bold hover:bg-[#128C7E] transition transform hover:-translate-y-1 flex items-center justify-center gap-2">
+            <button type="button" onclick="sendToWhatsApp()" class="flex-1 py-4 rounded-lg bg-brand-whatsapp text-white font-bold hover:bg-brand-whatsapp/80 transition flex items-center justify-center gap-2">
               <i class="fab fa-whatsapp"></i> Send via WhatsApp
             </button>
           </div>
-          
-          <p class="text-xs text-gray-500 text-center mt-4">
-            By submitting, you agree to our Terms of Service and Privacy Policy.
-          </p>
         </form>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="border-t border-white/5 bg-black/40 pt-16 pb-32 md:pb-8 relative z-10">
+  <footer class="border-t border-white/10 bg-black/60 pt-16 pb-32 md:pb-8 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-4 gap-8 mb-12">
         <div class="col-span-1 md:col-span-2">
           <div class="flex items-center gap-2 mb-4">
-            <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" class="w-8 h-8 rounded object-cover">
-            <span class="text-xl font-display font-bold text-white">STANYTZ</span>
+            <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" class="w-10 h-10 rounded-lg object-cover border-2 border-brand-purple/50">
+            <span class="text-2xl font-display font-bold text-white">STANY<span class="text-brand-purple">TZ</span></span>
           </div>
-          <p class="text-gray-500 text-sm max-w-xs">Empowering businesses through innovative technology solutions. Built in Tanzania for the world.</p>
+          <p class="text-gray-400 text-sm max-w-md mb-6">Premium technology solutions for businesses in Tanzania and beyond. Innovation, excellence, and impact.</p>
+          <div class="flex gap-3">
+            <a href="https://wa.me/255787069580" target="_blank" class="w-10 h-10 rounded-full bg-brand-whatsapp/20 flex items-center justify-center text-brand-whatsapp hover:bg-brand-whatsapp hover:text-white transition">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://t.me/StanyTz076" target="_blank" class="w-10 h-10 rounded-full bg-brand-telegram/20 flex items-center justify-center text-brand-telegram hover:bg-brand-telegram hover:text-white transition">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+            <a href="mailto:officialstanlee143@gmail.com" class="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white transition">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
         </div>
+        
         <div>
           <h4 class="text-white font-semibold mb-4">Quick Links</h4>
-          <ul class="space-y-2 text-sm text-gray-500">
+          <ul class="space-y-2 text-sm text-gray-400">
             <li><a href="#home" class="hover:text-brand-purple transition">Home</a></li>
             <li><a href="#services" class="hover:text-brand-purple transition">Services</a></li>
-            <li><a href="#work" class="hover:text-brand-purple transition">Portfolio</a></li>
+            <li><a href="#portfolio" class="hover:text-brand-purple transition">Portfolio</a></li>
+            <li><a href="#contact" class="hover:text-brand-purple transition">Contact</a></li>
           </ul>
         </div>
+        
         <div>
-          <h4 class="text-white font-semibold mb-4">Contact</h4>
-          <ul class="space-y-2 text-sm text-gray-500">
-            <li><a href="mailto:officialstanlee143@gmail.com" class="hover:text-brand-purple transition">Email Us</a></li>
-            <li><a href="https://wa.me/255787069580" onclick="trackWhatsAppClick('footer')" class="hover:text-brand-purple transition">WhatsApp</a></li>
+          <h4 class="text-white font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-brand-purple transition">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-brand-purple transition">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-brand-purple transition">Cookie Policy</a></li>
           </ul>
         </div>
       </div>
-      <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-gray-600 text-xs">&copy; <span id="year"></span> STANYTZ. All rights reserved.</p>
-        <div class="flex items-center gap-2 text-xs text-gray-600">
-          <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-          System Operational
-        </div>
+      
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-500 text-sm">&copy; <span id="year"></span> STANYTZ. All rights reserved.</p>
+        <p class="text-gray-600 text-xs">Made with <i class="fas fa-heart text-brand-pink"></i> in Tanzania 🇹</p>
       </div>
     </div>
   </footer>
 
   <!-- MOBILE BOTTOM NAVIGATION -->
-  <nav class="fixed bottom-0 left-0 right-0 z-40 bottom-nav md:hidden safe-bottom">
+  <nav class="fixed bottom-0 left-0 right-0 z-40 bottom-nav safe-bottom md:hidden">
     <div class="flex items-center justify-around h-16">
       <a href="#home" class="nav-item active flex flex-col items-center justify-center w-full h-full text-gray-400" onclick="setActiveNav(this)">
         <i class="fas fa-home text-xl mb-1"></i>
@@ -626,16 +1071,13 @@
         <i class="fas fa-th-large text-xl mb-1"></i>
         <span class="text-[10px] font-medium">Services</span>
       </a>
-      <a href="https://wa.me/255787069580?text=Hello%20STANYTZ" 
-         target="_blank"
-         onclick="trackWhatsAppClick('bottom_nav'); setActiveNav(this)"
-         class="nav-item flex flex-col items-center justify-center w-full h-full text-brand-whatsapp">
-        <div class="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center -mt-6 border-4 border-brand-dark shadow-lg whatsapp-pulse">
+      <a href="https://wa.me/255787069580" target="_blank" class="nav-item flex flex-col items-center justify-center w-full h-full">
+        <div class="w-12 h-12 rounded-full bg-brand-whatsapp flex items-center justify-center -mt-6 border-4 border-brand-dark shadow-lg whatsapp-pulse">
           <i class="fab fa-whatsapp text-2xl text-white"></i>
         </div>
-        <span class="text-[10px] font-medium mt-1">Chat</span>
+        <span class="text-[10px] font-medium mt-1 text-brand-whatsapp">Chat</span>
       </a>
-      <a href="#work" class="nav-item flex flex-col items-center justify-center w-full h-full text-gray-400" onclick="setActiveNav(this)">
+      <a href="#portfolio" class="nav-item flex flex-col items-center justify-center w-full h-full text-gray-400" onclick="setActiveNav(this)">
         <i class="fas fa-briefcase text-xl mb-1"></i>
         <span class="text-[10px] font-medium">Work</span>
       </a>
@@ -646,35 +1088,38 @@
     </div>
   </nav>
 
-  <!-- FLOATING WHATSAPP (Desktop Only) -->
-  <a href="https://wa.me/255787069580?text=Hello%20STANYTZ,%20I%20need%20assistance%20with%20a%20project." 
+  <!-- FLOATING WHATSAPP (Desktop) -->
+  <a href="https://wa.me/255787069580?text=Hello%20STANYTZ" 
      target="_blank"
-     onclick="trackWhatsAppClick('floating_button')"
-     class="hidden md:flex fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#128C7E] rounded-full items-center justify-center shadow-lg shadow-green-500/30 hover:scale-110 transition-all duration-300 group whatsapp-pulse">
+     class="hidden md:flex fixed bottom-6 right-6 z-50 w-14 h-14 bg-brand-whatsapp hover:bg-brand-whatsapp/90 rounded-full items-center justify-center shadow-lg shadow-brand-whatsapp/30 hover:scale-110 transition-all whatsapp-pulse">
     <i class="fab fa-whatsapp text-white text-3xl"></i>
-    <span class="absolute right-full mr-3 px-3 py-1.5 bg-white text-black text-xs font-bold rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none shadow-xl">
-      Chat Now!
-    </span>
   </a>
 
   <!-- SCRIPTS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     // Initialize AOS
-    AOS.init({ once: true, offset: 50, duration: 800 });
+    AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-out-cubic' });
     
     // Loader
     window.addEventListener('load', () => {
       setTimeout(() => {
         document.getElementById('loader').style.opacity = '0';
         document.getElementById('loader').style.visibility = 'hidden';
-      }, 1500);
+        
+        // Show welcome message
+        setTimeout(() => {
+          document.getElementById('welcomeMsg').classList.add('show');
+          setTimeout(() => {
+            document.getElementById('welcomeMsg').classList.remove('show');
+          }, 3000);
+        }, 500);
+      }, 2000);
     });
     
     // Mobile Menu
     function toggleMobileMenu() {
-      const menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('hidden');
+      document.getElementById('mobileMenu').classList.toggle('hidden');
     }
     
     // Bottom Nav Active State
@@ -702,13 +1147,21 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          animateValue("stat-projects", 0, 50, 2000);
-          animateValue("stat-clients", 0, 120, 2000);
+          animateValue("statProjects", 0, 50, 2000);
+          animateValue("statClients", 0, 120, 2000);
           observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.5 });
     observer.observe(document.querySelector('#home'));
+    
+    // Progress Bar
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('progressBar').style.width = scrolled + '%';
+    });
     
     // Set Year
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -722,28 +1175,12 @@
       btn.disabled = true;
       btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
       
-      // Simulate API call
       setTimeout(() => {
-        document.getElementById('contactForm').style.display = 'none';
-        document.getElementById('formSuccess').classList.remove('hidden');
-        document.getElementById('formSuccess').classList.add('animate-slide-up');
-        
+        alert('Thank you! Your message has been sent. We will contact you within 24 hours.');
+        document.getElementById('contactForm').reset();
         btn.disabled = false;
         btn.innerHTML = originalContent;
-        
-        // Track form submission
-        gtag('event', 'form_submission', {
-          'event_category': 'conversion',
-          'event_label': 'contact_form',
-          'value': 1
-        });
       }, 1500);
-    }
-    
-    function resetForm() {
-      document.getElementById('contactForm').reset();
-      document.getElementById('contactForm').style.display = 'block';
-      document.getElementById('formSuccess').classList.add('hidden');
     }
     
     // Send to WhatsApp
@@ -754,8 +1191,8 @@
       const service = document.getElementById('contactService').value;
       const message = document.getElementById('contactMessage').value;
       
-      if (!name || !email || !message) {
-        alert('Please fill in all required fields (Name, Email, Message)');
+      if (!name || !email || !service || !message) {
+        alert('Please fill in all required fields');
         return;
       }
       
@@ -764,38 +1201,22 @@
                    `*Email:* ${email}%0A` +
                    `*Phone:* ${phone || 'Not provided'}%0A` +
                    `*Service:* ${service}%0A` +
-                   `*Message:* ${message}%0A%0A` +
-                   `Sent from: ${window.location.href}`;
+                   `*Message:* ${message}`;
       
-      const whatsappURL = `https://wa.me/255787069580?text=${text}`;
-      
-      // Track
-      trackWhatsAppClick('contact_form_whatsapp_button');
-      
-      // Open WhatsApp
-      window.open(whatsappURL, '_blank');
-      
-      // Show success
-      setTimeout(() => {
-        document.getElementById('contactForm').style.display = 'none';
-        document.getElementById('formSuccess').classList.remove('hidden');
-        document.getElementById('formSuccess').classList.add('animate-slide-up');
-      }, 500);
+      window.open(`https://wa.me/255787069580?text=${text}`, '_blank');
     }
     
-    // Navbar Scroll Effect
-    window.addEventListener('scroll', () => {
-      const nav = document.getElementById('navbar');
-      if (window.scrollY > 50) {
-        nav.classList.add('shadow-lg');
-        nav.style.background = 'rgba(5, 5, 5, 0.95)';
-      } else {
-        nav.classList.remove('shadow-lg');
-        nav.style.background = 'rgba(5, 5, 5, 0.85)';
+    // Disable Right Click
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    
+    // Disable Keyboard Shortcuts for Copy
+    document.addEventListener('keydown', e => {
+      if (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's')) {
+        e.preventDefault();
       }
     });
     
-    // Smooth Scroll for anchor links
+    // Smooth Scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -805,15 +1226,6 @@
         }
       });
     });
-    
-    // Service Worker for PWA (Basic)
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('data:text/javascript,' + encodeURIComponent(`
-        self.addEventListener('install', e => e.waitUntil(self.skipWaiting()));
-        self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));
-        self.addEventListener('fetch', e => e.respondWith(fetch(e.request).catch(() => new Response('Offline'))));
-      `)).catch(() => console.log('SW registration skipped'));
-    }
   </script>
 </body>
 </html>
