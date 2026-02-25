@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+  
+  <!-- Primary Meta Tags -->
+  <title>STANYTZ | Premium Digital Innovation Hub - Tanzania</title>
+  <meta name="title" content="STANYTZ | Premium Digital Innovation Hub">
+  <meta name="description" content="STANYTZ delivers world-class software, AI automation, WhatsApp bots & web solutions. Based in Tanzania, serving globally. Transform your business today!">
+  <meta name="author" content="STANYTZ - Stanley Assanaly">
+  <meta name="keywords" content="STANYTZ, software development Tanzania, WhatsApp bot, AI automation, web development, mobile apps, Dar es Salaam, tech company">
+  <meta name="theme-color" content="#8b5cf6">
+  <meta name="msapplication-TileColor" content="#8b5cf6">
+  
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stanytz.com/">
+  <meta property="og:title" content="STANYTZ | Premium Digital Innovation Hub">
+  <meta property="og:description" content="World-class software, AI automation & WhatsApp bots. Based in Tanzania, serving globally.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="STANYTZ">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://stanytz.com/">
+  <meta property="twitter:title" content="STANYTZ | Premium Digital Innovation Hub">
+  <meta property="twitter:description" content="World-class software, AI automation & WhatsApp bots. Transform your business today!">
+  <meta property="twitter:image" content="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg">
+  
+  <!-- iOS & Android PWA -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="STANYTZ">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="STANYTZ">
+  
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet"/>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Plausible Analytics (Privacy-Focused) -->
+  <script defer data-domain="stanytz.com" src="https://plausible.io/js/script.js"></script>
+  
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+    
+    // Custom WhatsApp Click Tracking
+    function trackWhatsAppClick(source) {
+      gtag('event', 'whatsapp_click', {
+        'event_category': 'engagement',
+        'event_label': source,
+        'value': 1
+      });
+      
+      // Plausible custom event
+      plausible('WhatsApp Click', { props: { source: source } });
+      
+      // Also track in console for debugging
+      console.log(`WhatsApp clicked from: ${source}`);
+    }
+  </script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { 
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              dark: '#050505',
+              card: '#0f172a',
+              purple: '#8b5cf6',
+              pink: '#ec4899',
+              teal: '#14b8a6',
+              whatsapp: '#25D366'
+            }
+          },
+          animation: {
+            'blob': 'blob 7s infinite',
+            'float': 'float 6s ease-in-out infinite',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'slide-up': 'slideUp 0.3s ease-out',
+          },
+          keyframes: {
+            blob: {
+              '0%': { transform: 'translate(0px, 0px) scale(1)' },
+              '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+              '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+              '100%': { transform: 'translate(0px, 0px) scale(1)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(100%)' },
+              '100%': { transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #050505; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #8b5cf6; }
+    
+    /* Safe Area for Mobile (iPhone notch) */
+    .safe-top { padding-top: env(safe-area-inset-top); }
+    .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+    
+    /* Glassmorphism Pro */
+    .glass-panel {
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .glass-nav {
+      background: rgba(5, 5, 5, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    /* Loader */
+    #loader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: #050505;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    .loader-content { text-align: center; }
+    .spinner {
+      width: 50px; height: 50px;
+      border: 3px solid rgba(139, 92, 246, 0.3);
+      border-radius: 50%;
+      border-top-color: #8b5cf6;
+      animation: spin 1s ease-in-out infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    
+    /* Text Gradient */
+    .text-gradient {
+      background: linear-gradient(to right, #8b5cf6, #ec4899, #14b8a6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% auto;
+      animation: gradient-x 5s linear infinite;
+    }
+    @keyframes gradient-x {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    /* Image Zoom */
+    .img-zoom-container { overflow: hidden; }
+    .img-zoom { transition: transform 0.5s ease; }
+    .img-zoom-container:hover .img-zoom { transform: scale(1.1); }
+    
+    /* Mobile Bottom Nav */
+    .bottom-nav {
+      background: rgba(5, 5, 5, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    
+    .nav-item {
+      transition: all 0.2s ease;
+    }
+    .nav-item:active {
+      transform: scale(0.9);
+    }
+    .nav-item.active {
+      color: #8b5cf6;
+    }
+    
+    /* Form Success Animation */
+    .success-checkmark {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: block;
+      stroke-width: 2;
+      stroke: #fff;
+      stroke-miterlimit: 10;
+      margin: 10% auto;
+      box-shadow: inset 0px 0px 0px #14b8a6;
+      animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    }
+    .checkmark__circle {
+      stroke-dasharray: 166;
+      stroke-dashoffset: 166;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+      stroke: #14b8a6;
+      fill: none;
+      animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+    }
+    .checkmark__check {
+      transform-origin: 50% 50%;
+      stroke-dasharray: 48;
+      stroke-dashoffset: 48;
+      animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+    }
+    @keyframes stroke { 100% { stroke-dashoffset: 0; } }
+    @keyframes scale { 0%, 100% { transform: none; } 50% { transform: scale3d(1.1, 1.1, 1); } }
+    @keyframes fill { 100% { box-shadow: inset 0px 0px 0px 30px #14b8a6; } }
+    
+    /* Hide scrollbar for horizontal scroll */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    /* WhatsApp Float Pulse */
+    @keyframes pulse-green {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      50% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    }
+    .whatsapp-pulse {
+      animation: pulse-green 2s infinite;
+    }
+  </style>
+</head>
+<body class="bg-brand-dark text-slate-300 font-sans antialiased overflow-x-hidden selection:bg-brand-purple selection:text-white pb-20 md:pb-0">
+
+  <!-- LOADING SPLASH SCREEN -->
+  <div id="loader">
+    <div class="loader-content">
+      <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" 
+           alt="STANYTZ Logo" 
+           class="w-24 h-24 rounded-2xl mx-auto mb-4 animate-float shadow-2xl shadow-brand-purple/50 object-cover border-2 border-brand-purple/30">
+      <div class="spinner mx-auto mb-3"></div>
+      <h2 class="text-xl font-display font-bold text-white tracking-widest">STANYTZ</h2>
+      <p class="text-xs text-brand-teal mt-1 uppercase tracking-[0.2em]">Loading Innovation...</p>
+    </div>
+  </div>
+
+  <!-- BACKGROUND ANIMATION -->
+  <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-brand-purple/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob"></div>
+    <div class="absolute top-0 right-1/4 w-96 h-96 bg-brand-teal/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+    <div class="absolute -bottom-32 left-1/3 w-96 h-96 bg-brand-pink/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+    <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 contrast-150"></div>
+  </div>
+
+  <!-- NAVBAR (Desktop) -->
+  <nav class="fixed w-full z-40 glass-nav transition-all duration-300 hidden md:block" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="#" class="flex items-center gap-3 group">
+          <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" 
+               alt="STANYTZ" 
+               class="w-10 h-10 rounded-lg object-cover border border-white/10 group-hover:border-brand-purple transition-colors">
+          <span class="text-xl font-display font-bold text-white tracking-tight">STANY<span class="text-brand-purple">TZ</span></span>
+        </a>
+        <div class="ml-10 flex items-baseline space-x-8">
+          <a href="#home" class="hover:text-white transition-colors text-sm font-medium">Home</a>
+          <a href="#services" class="hover:text-white transition-colors text-sm font-medium">Services</a>
+          <a href="#work" class="hover:text-white transition-colors text-sm font-medium">Portfolio</a>
+          <a href="#about" class="hover:text-white transition-colors text-sm font-medium">About</a>
+          <a href="#contact" class="px-5 py-2.5 rounded-full bg-white/10 hover:bg-brand-purple hover:text-white border border-white/10 hover:border-brand-purple transition-all text-sm font-semibold backdrop-blur-md">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE TOP BAR -->
+  <div class="fixed top-0 left-0 right-0 z-40 glass-nav safe-top md:hidden">
+    <div class="flex items-center justify-between h-14 px-4">
+      <div class="flex items-center gap-2">
+        <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" 
+             alt="STANYTZ" 
+             class="w-8 h-8 rounded-lg object-cover">
+        <span class="text-lg font-display font-bold text-white">STANYTZ</span>
+      </div>
+      <button onclick="toggleMobileMenu()" class="text-white p-2">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div id="mobileMenu" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl hidden md:hidden safe-top">
+    <div class="flex flex-col h-full p-6">
+      <div class="flex justify-between items-center mb-8">
+        <span class="text-2xl font-display font-bold text-white">Menu</span>
+        <button onclick="toggleMobileMenu()" class="text-white p-2">
+          <i class="fas fa-times text-2xl"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-4 text-center">
+        <a href="#home" onclick="toggleMobileMenu()" class="text-2xl font-semibold text-white py-4 border-b border-white/10">Home</a>
+        <a href="#services" onclick="toggleMobileMenu()" class="text-2xl font-semibold text-gray-400 py-4 border-b border-white/10">Services</a>
+        <a href="#work" onclick="toggleMobileMenu()" class="text-2xl font-semibold text-gray-400 py-4 border-b border-white/10">Portfolio</a>
+        <a href="#about" onclick="toggleMobileMenu()" class="text-2xl font-semibold text-gray-400 py-4 border-b border-white/10">About</a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="text-2xl font-semibold text-brand-teal py-4">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative z-10 min-h-screen flex items-center justify-center pt-20 md:pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-12">
+      
+      <div class="lg:w-1/2 text-center lg:text-left" data-aos="fade-right" data-aos-duration="1000">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border border-brand-purple/30 mb-6">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-teal opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-teal"></span>
+          </span>
+          <span class="text-xs font-semibold text-brand-teal uppercase tracking-wider">Available for Projects</span>
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold text-white leading-tight mb-6">
+          Building the <br>
+          <span class="text-gradient">Digital Future</span>
+        </h1>
+        
+        <p class="text-lg text-gray-400 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+          STANYTZ delivers world-class software, AI automation, and web solutions tailored for the African market and beyond.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+          <a href="#contact" class="px-8 py-4 rounded-full bg-gradient-to-r from-brand-purple to-brand-pink text-white font-bold shadow-lg shadow-brand-purple/25 hover:shadow-brand-purple/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
+            Start Project <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://wa.me/255787069580?text=Hello%20STANYTZ" 
+             target="_blank"
+             onclick="trackWhatsAppClick('hero_section')"
+             class="px-8 py-4 rounded-full glass-panel text-white font-semibold hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp text-brand-whatsapp"></i> Chat Now
+          </a>
+        </div>
+
+        <!-- Real-time Stats -->
+        <div class="grid grid-cols-3 gap-4 border-t border-white/10 pt-8">
+          <div>
+            <div class="text-2xl font-bold text-white" id="stat-projects">0</div>
+            <div class="text-xs text-gray-500 uppercase">Projects</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-white" id="stat-clients">0</div>
+            <div class="text-xs text-gray-500 uppercase">Clients</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-white">24/7</div>
+            <div class="text-xs text-gray-500 uppercase">Support</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-1/2 flex justify-center lg:justify-end" data-aos="fade-left" data-aos-duration="1000">
+        <div class="relative w-full max-w-md">
+          <div class="absolute -inset-1 bg-gradient-to-r from-brand-purple to-brand-teal rounded-2xl blur opacity-30 animate-pulse"></div>
+          <div class="relative glass-panel rounded-2xl p-2 border border-white/10">
+            <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" 
+                 alt="STANYTZ Innovation" 
+                 class="rounded-xl w-full h-auto object-cover shadow-2xl">
+            <div class="absolute -bottom-6 -left-6 glass-panel p-4 rounded-xl border border-white/10 flex items-center gap-3 animate-float">
+              <div class="w-10 h-10 rounded-full bg-brand-teal/20 flex items-center justify-center text-brand-teal">
+                <i class="fas fa-code"></i>
+              </div>
+              <div>
+                <div class="text-xs text-gray-400">Technology</div>
+                <div class="text-sm font-bold text-white">Cutting Edge</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-20 md:py-32 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-brand-teal font-semibold tracking-wide uppercase text-sm mb-2">Our Expertise</h2>
+        <h3 class="text-3xl md:text-5xl font-display font-bold text-white">Premium Services</h3>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div class="glass-panel p-6 md:p-8 rounded-2xl hover:bg-white/5 transition duration-300 group" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-14 h-14 rounded-xl bg-brand-purple/20 flex items-center justify-center text-brand-purple text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">Custom Software</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">Tailor-made applications built with React, Node.js, and Python.</p>
+        </div>
+
+        <div class="glass-panel p-6 md:p-8 rounded-2xl hover:bg-white/5 transition duration-300 group" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-14 h-14 rounded-xl bg-brand-teal/20 flex items-center justify-center text-brand-teal text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">WhatsApp Automation</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">Advanced bots for customer support and automated notifications 24/7.</p>
+        </div>
+
+        <div class="glass-panel p-6 md:p-8 rounded-2xl hover:bg-white/5 transition duration-300 group" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-14 h-14 rounded-xl bg-brand-pink/20 flex items-center justify-center text-brand-pink text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">AI & Machine Learning</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">Predictive analytics and intelligent chatbots for your business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="work" class="py-20 md:py-32 relative z-10 bg-black/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12" data-aos="fade-right">
+        <div>
+          <h2 class="text-3xl md:text-5xl font-display font-bold text-white mb-2">Featured Work</h2>
+          <p class="text-gray-400">Recent projects delivered with excellence.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div class="group relative rounded-2xl overflow-hidden cursor-pointer" data-aos="zoom-in">
+          <div class="aspect-video bg-gray-800 img-zoom-container">
+            <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" 
+                 class="w-full h-full object-cover img-zoom opacity-80 group-hover:opacity-100" alt="Bot Project">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"></div>
+          <div class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition duration-300">
+            <span class="text-xs font-bold text-brand-teal bg-brand-teal/10 px-2 py-1 rounded mb-2 inline-block">Automation</span>
+            <h3 class="text-xl font-bold text-white">STANY FREE BOT</h3>
+            <p class="text-gray-300 text-sm mt-2 opacity-0 group-hover:opacity-100 transition delay-100">Advanced WhatsApp automation tool.</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
+          <div class="aspect-video bg-gray-800 img-zoom-container">
+            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-indigo-900 to-purple-900">
+              <i class="fas fa-chart-line text-4xl text-white/20"></i>
+            </div>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"></div>
+          <div class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition duration-300">
+            <span class="text-xs font-bold text-brand-pink bg-brand-pink/10 px-2 py-1 rounded mb-2 inline-block">Analytics</span>
+            <h3 class="text-xl font-bold text-white">Business Dashboard</h3>
+            <p class="text-gray-300 text-sm mt-2 opacity-0 group-hover:opacity-100 transition delay-100">Real-time data visualization.</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden cursor-pointer" data-aos="zoom-in" data-aos-delay="200">
+          <div class="aspect-video bg-gray-800 img-zoom-container">
+            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-teal-900 to-emerald-900">
+              <i class="fas fa-mobile-alt text-4xl text-white/20"></i>
+            </div>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"></div>
+          <div class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition duration-300">
+            <span class="text-xs font-bold text-brand-purple bg-brand-purple/10 px-2 py-1 rounded mb-2 inline-block">Mobile App</span>
+            <h3 class="text-xl font-bold text-white">E-Commerce Platform</h3>
+            <p class="text-gray-300 text-sm mt-2 opacity-0 group-hover:opacity-100 transition delay-100">Full-stack mobile application.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-20 md:py-32 relative z-10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-panel rounded-3xl p-6 md:p-12 border border-white/10" data-aos="fade-up">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-4">Let's Build Something Great</h2>
+          <p class="text-gray-400">Send us a message or chat directly on WhatsApp.</p>
+        </div>
+
+        <!-- Form Success Message -->
+        <div id="formSuccess" class="hidden text-center py-12">
+          <svg class="success-checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+          </svg>
+          <h3 class="text-2xl font-bold text-white mb-2">Message Sent!</h3>
+          <p class="text-gray-400 mb-6">We'll get back to you within 24 hours.</p>
+          <button onclick="resetForm()" class="px-6 py-3 rounded-full bg-brand-purple text-white font-semibold hover:bg-brand-purple/80 transition">
+            Send Another
+          </button>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="space-y-4" onsubmit="handleSubmit(event)">
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Name *</label>
+              <input type="text" id="contactName" required class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple transition" placeholder="John Doe">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Phone</label>
+              <input type="tel" id="contactPhone" class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple transition" placeholder="+255 787 069 580">
+            </div>
+          </div>
+          
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Email *</label>
+            <input type="email" id="contactEmail" required class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple transition" placeholder="john@example.com">
+          </div>
+          
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Service Interested In</label>
+            <select id="contactService" class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple transition">
+              <option value="Custom Software">Custom Software Development</option>
+              <option value="WhatsApp Bot">WhatsApp Automation Bot</option>
+              <option value="AI/ML">AI & Machine Learning</option>
+              <option value="Web Design">Web Design</option>
+              <option value="Mobile App">Mobile App</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Message *</label>
+            <textarea id="contactMessage" rows="4" required class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple transition" placeholder="Tell us about your project..."></textarea>
+          </div>
+          
+          <div class="flex flex-col sm:flex-row gap-3 pt-4">
+            <button type="submit" id="submitBtn" class="flex-1 py-4 rounded-lg bg-gradient-to-r from-brand-purple to-brand-pink text-white font-bold hover:shadow-lg hover:shadow-brand-purple/30 transition transform hover:-translate-y-1 flex items-center justify-center gap-2">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <button type="button" onclick="sendToWhatsApp()" class="flex-1 py-4 rounded-lg bg-[#25D366] text-white font-bold hover:bg-[#128C7E] transition transform hover:-translate-y-1 flex items-center justify-center gap-2">
+              <i class="fab fa-whatsapp"></i> Send via WhatsApp
+            </button>
+          </div>
+          
+          <p class="text-xs text-gray-500 text-center mt-4">
+            By submitting, you agree to our Terms of Service and Privacy Policy.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 bg-black/40 pt-16 pb-32 md:pb-8 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div class="col-span-1 md:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <img src="https://raw.githubusercontent.com/Official123-12/STANYFREEBOT-/refs/heads/main/IMG_1378.jpeg" class="w-8 h-8 rounded object-cover">
+            <span class="text-xl font-display font-bold text-white">STANYTZ</span>
+          </div>
+          <p class="text-gray-500 text-sm max-w-xs">Empowering businesses through innovative technology solutions. Built in Tanzania for the world.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm text-gray-500">
+            <li><a href="#home" class="hover:text-brand-purple transition">Home</a></li>
+            <li><a href="#services" class="hover:text-brand-purple transition">Services</a></li>
+            <li><a href="#work" class="hover:text-brand-purple transition">Portfolio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-gray-500">
+            <li><a href="mailto:officialstanlee143@gmail.com" class="hover:text-brand-purple transition">Email Us</a></li>
+            <li><a href="https://wa.me/255787069580" onclick="trackWhatsAppClick('footer')" class="hover:text-brand-purple transition">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-600 text-xs">&copy; <span id="year"></span> STANYTZ. All rights reserved.</p>
+        <div class="flex items-center gap-2 text-xs text-gray-600">
+          <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+          System Operational
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE BOTTOM NAVIGATION -->
+  <nav class="fixed bottom-0 left-0 right-0 z-40 bottom-nav md:hidden safe-bottom">
+    <div class="flex items-center justify-around h-16">
+      <a href="#home" class="nav-item active flex flex-col items-center justify-center w-full h-full text-gray-400" onclick="setActiveNav(this)">
+        <i class="fas fa-home text-xl mb-1"></i>
+        <span class="text-[10px] font-medium">Home</span>
+      </a>
+      <a href="#services" class="nav-item flex flex-col items-center justify-center w-full h-full text-gray-400" onclick="setActiveNav(this)">
+        <i class="fas fa-th-large text-xl mb-1"></i>
+        <span class="text-[10px] font-medium">Services</span>
+      </a>
+      <a href="https://wa.me/255787069580?text=Hello%20STANYTZ" 
+         target="_blank"
+         onclick="trackWhatsAppClick('bottom_nav'); setActiveNav(this)"
+         class="nav-item flex flex-col items-center justify-center w-full h-full text-brand-whatsapp">
+        <div class="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center -mt-6 border-4 border-brand-dark shadow-lg whatsapp-pulse">
+          <i class="fab fa-whatsapp text-2xl text-white"></i>
+        </div>
+        <span class="text-[10px] font-medium mt-1">Chat</span>
+      </a>
+      <a href="#work" class="nav-item flex flex-col items-center justify-center w-full h-full text-gray-400" onclick="setActiveNav(this)">
+        <i class="fas fa-briefcase text-xl mb-1"></i>
+        <span class="text-[10px] font-medium">Work</span>
+      </a>
+      <a href="#contact" class="nav-item flex flex-col items-center justify-center w-full h-full text-gray-400" onclick="setActiveNav(this)">
+        <i class="fas fa-envelope text-xl mb-1"></i>
+        <span class="text-[10px] font-medium">Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FLOATING WHATSAPP (Desktop Only) -->
+  <a href="https://wa.me/255787069580?text=Hello%20STANYTZ,%20I%20need%20assistance%20with%20a%20project." 
+     target="_blank"
+     onclick="trackWhatsAppClick('floating_button')"
+     class="hidden md:flex fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#128C7E] rounded-full items-center justify-center shadow-lg shadow-green-500/30 hover:scale-110 transition-all duration-300 group whatsapp-pulse">
+    <i class="fab fa-whatsapp text-white text-3xl"></i>
+    <span class="absolute right-full mr-3 px-3 py-1.5 bg-white text-black text-xs font-bold rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none shadow-xl">
+      Chat Now!
+    </span>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({ once: true, offset: 50, duration: 800 });
+    
+    // Loader
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loader').style.opacity = '0';
+        document.getElementById('loader').style.visibility = 'hidden';
+      }, 1500);
+    });
+    
+    // Mobile Menu
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+    
+    // Bottom Nav Active State
+    function setActiveNav(element) {
+      document.querySelectorAll('.nav-item').forEach(el => {
+        el.classList.remove('active', 'text-brand-purple');
+        el.classList.add('text-gray-400');
+      });
+      element.classList.remove('text-gray-400');
+      element.classList.add('active', 'text-brand-purple');
+    }
+    
+    // Stats Animation
+    function animateValue(id, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        document.getElementById(id).innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) window.requestAnimationFrame(step);
+      };
+      window.requestAnimationFrame(step);
+    }
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateValue("stat-projects", 0, 50, 2000);
+          animateValue("stat-clients", 0, 120, 2000);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    observer.observe(document.querySelector('#home'));
+    
+    // Set Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Form Handling
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      const originalContent = btn.innerHTML;
+      
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      
+      // Simulate API call
+      setTimeout(() => {
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('formSuccess').classList.remove('hidden');
+        document.getElementById('formSuccess').classList.add('animate-slide-up');
+        
+        btn.disabled = false;
+        btn.innerHTML = originalContent;
+        
+        // Track form submission
+        gtag('event', 'form_submission', {
+          'event_category': 'conversion',
+          'event_label': 'contact_form',
+          'value': 1
+        });
+      }, 1500);
+    }
+    
+    function resetForm() {
+      document.getElementById('contactForm').reset();
+      document.getElementById('contactForm').style.display = 'block';
+      document.getElementById('formSuccess').classList.add('hidden');
+    }
+    
+    // Send to WhatsApp
+    function sendToWhatsApp() {
+      const name = document.getElementById('contactName').value;
+      const email = document.getElementById('contactEmail').value;
+      const phone = document.getElementById('contactPhone').value;
+      const service = document.getElementById('contactService').value;
+      const message = document.getElementById('contactMessage').value;
+      
+      if (!name || !email || !message) {
+        alert('Please fill in all required fields (Name, Email, Message)');
+        return;
+      }
+      
+      const text = `*New Inquiry from STANYTZ Website*%0A%0A` +
+                   `*Name:* ${name}%0A` +
+                   `*Email:* ${email}%0A` +
+                   `*Phone:* ${phone || 'Not provided'}%0A` +
+                   `*Service:* ${service}%0A` +
+                   `*Message:* ${message}%0A%0A` +
+                   `Sent from: ${window.location.href}`;
+      
+      const whatsappURL = `https://wa.me/255787069580?text=${text}`;
+      
+      // Track
+      trackWhatsAppClick('contact_form_whatsapp_button');
+      
+      // Open WhatsApp
+      window.open(whatsappURL, '_blank');
+      
+      // Show success
+      setTimeout(() => {
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('formSuccess').classList.remove('hidden');
+        document.getElementById('formSuccess').classList.add('animate-slide-up');
+      }, 500);
+    }
+    
+    // Navbar Scroll Effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('shadow-lg');
+        nav.style.background = 'rgba(5, 5, 5, 0.95)';
+      } else {
+        nav.classList.remove('shadow-lg');
+        nav.style.background = 'rgba(5, 5, 5, 0.85)';
+      }
+    });
+    
+    // Smooth Scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+    
+    // Service Worker for PWA (Basic)
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('data:text/javascript,' + encodeURIComponent(`
+        self.addEventListener('install', e => e.waitUntil(self.skipWaiting()));
+        self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));
+        self.addEventListener('fetch', e => e.respondWith(fetch(e.request).catch(() => new Response('Offline'))));
+      `)).catch(() => console.log('SW registration skipped'));
+    }
+  </script>
+</body>
+</html>
+
